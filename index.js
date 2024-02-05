@@ -54,6 +54,8 @@ const divisibleByFive = (n1 % 5 == 0) && (n2 % 5 == 0) && (n3 % 5 == 0) && (n4 %
 console.log(`Divisible by 5: ${divisibleByFive}`);
 
 // Check if the first number is larger than the last. Cache the result in a variable.
+const firstLargerThanLast = (n1 > n4);
+console.log(`First number larger than last: ${firstLargerThanLast}`);
 
 /*
   Accomplish the following arithmetic chain:
