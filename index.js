@@ -72,3 +72,8 @@ console.log(`Result of arithmetic chain: ${mathChain}`);
 /*
   Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.
 */
+// Check three: no number larger than 25
+// This time, we use the OR operator to check
+// if ANY of the numbers is larger than 25.
+const isUnder25 = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
+console.log(`No numbers larger than 25 v2: ${isUnder25}`);
