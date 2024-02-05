@@ -77,3 +77,34 @@ console.log(`Result of arithmetic chain: ${mathChain}`);
 // if ANY of the numbers is larger than 25.
 const isUnder25 = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
 console.log(`No numbers larger than 25 v2: ${isUnder25}`);
+
+
+/**********
+ * PART 2 *
+ **********/
+
+/*
+  Scenario:
+    You are planning a cross-country road trip!
+    The distance of the trip, in total, is 1,500 miles.
+    Your car’s fuel efficiency is as follows:
+    At 55 miles per hour, you get 30 miles per gallon.
+    At 60 miles per hour, you get 28 miles per gallon.
+    At 75 miles per hour, you get 23 miles per gallon.
+    You have a fuel budget of $175.
+    The average cost of fuel is $3 per gallon.
+*/
+const COST_PER_GALLON = 3.0
+const FUEL_BUDGET = 175.0
+const TRIP_DISTANCE = 1500.0
+const EFFICIENCY_55MPH = 30.0
+const EFFICIENCY_60MPH = 28.0
+const EFFICIENCY_75MPH = 23.0
+
+// How many gallons of fuel will you need for the entire trip?
+
+
+// Will your budget be enough to cover the fuel expense?
+
+
+// How long will the trip take, in hours?
