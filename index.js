@@ -63,6 +63,10 @@ console.log(`First number larger than last: ${firstLargerThanLast}`);
   Multiply the result by the third number.
   Find the remainder of dividing the result by the fourth number.
 */
+let mathChain = n2 - n1;
+mathChain *= n3;
+mathChain %= n4;
+console.log(`Result of arithmetic chain: ${mathChain}`);
 
 
 /*
