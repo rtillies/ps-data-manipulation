@@ -117,6 +117,7 @@ console.log("\n=== 55 MPH ===");
 console.log(`Gas Needed: ${gallonsNeeded} gallons`);
 console.log(`Fuel Cost: $${totalFuelCost}`);
 console.log(`Trip Duration: ${tripDuration} hours`);
+console.log(`Do we have enough money? ${FUEL_BUDGET >= totalFuelCost}`);
 
 // 60 mph
 mph = 60.0
@@ -129,6 +130,7 @@ console.log("\n=== 60 MPH ===");
 console.log(`Gas Needed: ${gallonsNeeded} gallons`);
 console.log(`Fuel Cost: $${totalFuelCost}`);
 console.log(`Trip Duration: ${tripDuration} hours`);
+console.log(`Do we have enough money? ${FUEL_BUDGET >= totalFuelCost}`);
 
 // 75 mph
 mph = 75.0
@@ -141,3 +143,4 @@ console.log("\n=== 75 MPH ===");
 console.log(`Gas Needed: ${gallonsNeeded} gallons`);
 console.log(`Fuel Cost: $${totalFuelCost}`);
 console.log(`Trip Duration: ${tripDuration} hours`);
+console.log(`Do we have enough money? ${FUEL_BUDGET >= totalFuelCost}`);
