@@ -104,40 +104,40 @@ console.log(`No numbers larger than 25 v2: ${isUnder25}`);
 const TRIP_DISTANCE = 1500.0
 const FUEL_BUDGET = 175.0
 const COST_PER_GALLON = 3.0
+let mph, efficiency, gallonsNeeded, totalFuelCost, tripDuration
 
 // 55 mph
-const MPH_55 = 55.0
-const EFFICIENCY_55 = 30.0
-let gallonsNeeded55 = (TRIP_DISTANCE / EFFICIENCY_55).toFixed(2)
-let totalFuelCost55 = (gallonsNeeded55 * COST_PER_GALLON).toFixed(2)
-let tripDuration55 = (TRIP_DISTANCE / MPH_55).toFixed(2);
+mph = 55.0
+efficiency = 30.0
+gallonsNeeded = (TRIP_DISTANCE / efficiency).toFixed(2)
+totalFuelCost = (gallonsNeeded * COST_PER_GALLON).toFixed(2)
+tripDuration = (TRIP_DISTANCE / mph).toFixed(2);
 
-console.log("\n55 MPH");
-console.log(`Gas Needed: ${gallonsNeeded55} gallons`);
-console.log(`Fuel Cost: $${totalFuelCost55}`);
-console.log(`Trip Duration: ${tripDuration55} hours`);
+console.log("\n=== 55 MPH ===");
+console.log(`Gas Needed: ${gallonsNeeded} gallons`);
+console.log(`Fuel Cost: $${totalFuelCost}`);
+console.log(`Trip Duration: ${tripDuration} hours`);
 
 // 60 mph
-const MPH_60 = 60.0
-const EFFICIENCY_60 = 28.0
-let gallonsNeeded60 = (TRIP_DISTANCE / EFFICIENCY_60).toFixed(2)
-let totalFuelCost60 = (gallonsNeeded60 * COST_PER_GALLON).toFixed(2)
-let tripDuration60 = (TRIP_DISTANCE / MPH_60).toFixed(2);
+mph = 60.0
+efficiency = 28.0
+gallonsNeeded = (TRIP_DISTANCE / efficiency).toFixed(2)
+totalFuelCost = (gallonsNeeded * COST_PER_GALLON).toFixed(2)
+tripDuration = (TRIP_DISTANCE / mph).toFixed(2);
 
-console.log("\n60 MPH");
-console.log(`Gas Needed: ${gallonsNeeded60} gallons`);
-console.log(`Fuel Cost: $${totalFuelCost60}`);
-console.log(`Trip Duration: ${tripDuration60} hours`);
-
+console.log("\n=== 60 MPH ===");
+console.log(`Gas Needed: ${gallonsNeeded} gallons`);
+console.log(`Fuel Cost: $${totalFuelCost}`);
+console.log(`Trip Duration: ${tripDuration} hours`);
 
 // 75 mph
-const MPH_75 = 75.0
-const EFFICIENCY_75 = 23.0
-let gallonsNeeded75 = (TRIP_DISTANCE / EFFICIENCY_75).toFixed(2)
-let totalFuelCost75 = (gallonsNeeded75 * COST_PER_GALLON).toFixed(2)
-let tripDuration75 = (TRIP_DISTANCE / MPH_75).toFixed(2);
+mph = 75.0
+efficiency = 23.0
+gallonsNeeded = (TRIP_DISTANCE / efficiency).toFixed(2)
+totalFuelCost = (gallonsNeeded * COST_PER_GALLON).toFixed(2)
+tripDuration = (TRIP_DISTANCE / mph).toFixed(2);
 
-console.log("\n75 MPH");
-console.log(`Gas Needed: ${gallonsNeeded75} gallons`);
-console.log(`Fuel Cost: $${totalFuelCost75}`);
-console.log(`Trip Duration: ${tripDuration75} hours`);
+console.log("\n=== 75 MPH ===");
+console.log(`Gas Needed: ${gallonsNeeded} gallons`);
+console.log(`Fuel Cost: $${totalFuelCost}`);
+console.log(`Trip Duration: ${tripDuration} hours`);
