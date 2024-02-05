@@ -93,26 +93,51 @@ console.log(`No numbers larger than 25 v2: ${isUnder25}`);
     At 75 miles per hour, you get 23 miles per gallon.
     You have a fuel budget of $175.
     The average cost of fuel is $3 per gallon.
+    
+  Questions:    
+    How many gallons of fuel will you need for the entire trip?
+    Will your budget be enough to cover the fuel expense?
+    How long will the trip take, in hours?
 */
-const COST_PER_GALLON = 3.0
-const FUEL_BUDGET = 175.0
-const TRIP_DISTANCE = 1500.0
-const EFFICIENCY_60MPH = 28.0
-const EFFICIENCY_75MPH = 23.0
 
-// How many gallons of fuel will you need for the entire trip?
+// Constants
+const TRIP_DISTANCE = 1500.0
+const FUEL_BUDGET = 175.0
+const COST_PER_GALLON = 3.0
+
 // 55 mph
 const MPH_55 = 55.0
-const EFFICIENCY_55MPH = 30.0
-let gallonsNeeded = (TRIP_DISTANCE / EFFICIENCY_55MPH).toFixed(2)
-let totalFuelCost = (gallonsNeeded * COST_PER_GALLON).toFixed(2)
-let tripDuration = (TRIP_DISTANCE / MPH_55).toFixed(2);
+const EFFICIENCY_55 = 30.0
+let gallonsNeeded55 = (TRIP_DISTANCE / EFFICIENCY_55).toFixed(2)
+let totalFuelCost55 = (gallonsNeeded55 * COST_PER_GALLON).toFixed(2)
+let tripDuration55 = (TRIP_DISTANCE / MPH_55).toFixed(2);
 
-console.log(`Gas Needed: ${gallonsNeeded} gallons`);
-console.log(`Fuel Cost: $${totalFuelCost}`);
-console.log(`Trip Duration: ${tripDuration} hours`);
+console.log("\n55 MPH");
+console.log(`Gas Needed: ${gallonsNeeded55} gallons`);
+console.log(`Fuel Cost: $${totalFuelCost55}`);
+console.log(`Trip Duration: ${tripDuration55} hours`);
 
-// Will your budget be enough to cover the fuel expense?
+// 60 mph
+const MPH_60 = 60.0
+const EFFICIENCY_60 = 28.0
+let gallonsNeeded60 = (TRIP_DISTANCE / EFFICIENCY_60).toFixed(2)
+let totalFuelCost60 = (gallonsNeeded60 * COST_PER_GALLON).toFixed(2)
+let tripDuration60 = (TRIP_DISTANCE / MPH_60).toFixed(2);
+
+console.log("\n60 MPH");
+console.log(`Gas Needed: ${gallonsNeeded60} gallons`);
+console.log(`Fuel Cost: $${totalFuelCost60}`);
+console.log(`Trip Duration: ${tripDuration60} hours`);
 
 
-// How long will the trip take, in hours?
+// 75 mph
+const MPH_75 = 75.0
+const EFFICIENCY_75 = 23.0
+let gallonsNeeded75 = (TRIP_DISTANCE / EFFICIENCY_75).toFixed(2)
+let totalFuelCost75 = (gallonsNeeded75 * COST_PER_GALLON).toFixed(2)
+let tripDuration75 = (TRIP_DISTANCE / MPH_75).toFixed(2);
+
+console.log("\n75 MPH");
+console.log(`Gas Needed: ${gallonsNeeded75} gallons`);
+console.log(`Fuel Cost: $${totalFuelCost75}`);
+console.log(`Trip Duration: ${tripDuration75} hours`);
