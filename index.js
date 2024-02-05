@@ -97,12 +97,20 @@ console.log(`No numbers larger than 25 v2: ${isUnder25}`);
 const COST_PER_GALLON = 3.0
 const FUEL_BUDGET = 175.0
 const TRIP_DISTANCE = 1500.0
-const EFFICIENCY_55MPH = 30.0
 const EFFICIENCY_60MPH = 28.0
 const EFFICIENCY_75MPH = 23.0
 
 // How many gallons of fuel will you need for the entire trip?
+// 55 mph
+const MPH_55 = 55.0
+const EFFICIENCY_55MPH = 30.0
+let gallonsNeeded = (TRIP_DISTANCE / EFFICIENCY_55MPH).toFixed(2)
+let totalFuelCost = (gallonsNeeded * COST_PER_GALLON).toFixed(2)
+let tripDuration = (TRIP_DISTANCE / MPH_55).toFixed(2);
 
+console.log(`Gas Needed: ${gallonsNeeded} gallons`);
+console.log(`Fuel Cost: $${totalFuelCost}`);
+console.log(`Trip Duration: ${tripDuration} hours`);
 
 // Will your budget be enough to cover the fuel expense?
 
